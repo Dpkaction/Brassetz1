@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Landing Page with FAQ</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #0b0d17;
+            color: #ffffff;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            background-color: #3b82f6;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .dashboard {
+            text-align: center;
+            padding: 20px;
+        }
+        .features {
+            background-color: #0b0d17;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .features h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .features p {
+            font-size: 16px;
+            margin-bottom: 40px;
+        }
+        .feature-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .feature-card {
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            padding: 20px;
+            border-radius: 10px;
+            width: 200px;
+            text-align: left;
+        }
+        .feature-card:nth-child(2) {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+        }
+        .feature-card:nth-child(3) {
+            background: linear-gradient(135deg, #43e97b, #38f9d7);
+        }
+        .feature-card:nth-child(4) {
+            background: linear-gradient(135deg, #fa709a, #fee140);
+        }
+        .feature-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            font-size: 14px;
+        }
+        .trusted {
+            background-color: #0b0d17;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .trusted p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .trusted .form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .trusted .form input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .faq-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin: 50px auto;
+            color: #333;
+        }
+        .faq-container h2 {
+            color: #333;
+            border-bottom: 2px solid #ff4d4d;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-question {
+            color: #ff4d4d;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.2em;
+            transition: transform 0.3s ease;
+        }
+        .faq-question.active::after {
+            transform: rotate(45deg);
+        }
+        .faq-answer {
+            color: #666;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            padding: 0 10px;
+        }
+        .faq-answer.show {
+            max-height: 500px;
+            padding: 10px;
+        }
+        @media screen and (max-width: 480px) {
+            body{
+                width: 90vw;
+                overflow-x: hidden;
+                margin-left: 10px;
+                
+            }
+            .header h1 {
+                font-size: 24px;
+            }
+            .header p {
+                font-size: 12px;
+            }
+            .btn {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            .feature-card {
+                width: 90%;
+            }
+            .trusted p {
+                font-size: 14px;
+            }
+            .faq-container {
+                padding: 0.1rem;
+                object-fit: contain;
+            }
+            .faq-question {
+                font-size: 14px;
+            }
+            .faq-answer {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <div class="features">
+        <h2>Team</h2>
+        
+        
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h2 style="text-align: center;">Deepak singh</h2>
+                <a style=" text-align: center; text-decoration: none;" href="https://www.linkedin.com/in/dpkaction/"><h4>Read more..</h4></a>
+                <img style="width: 200px; height: 200px; border-radius: 40px; object-fit: contain;" src="WhatsApp Image 2024-09-26 at 13.53.30.jpeg" alt="photo">
+               
+            </div>
+            <div class="feature-card">
+                <h2 style="text-align: center;">Ayush agarwal</h2>
+                <a style=" text-align: center; text-decoration: none;" href="https://www.linkedin.com/in/ayshagrwl?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><h4>Read more..</h4></a>
+                <img style="width: 200px; height: 200px; border-radius: 40px; object-fit: contain;" src="WhatsApp Image 2024-09-26 at 13.59.28.jpeg" alt="photo">
+            </div>
+            <div class="feature-card">
+                <h2 style="text-align: center;">Amit K.</h2>
+                <a style=" text-align: center; text-decoration: none;" href="https://www.linkedin.com/in/deeksha-tiwari-b63b912a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><h4>Read more..</h4></a>
+                <img style="width: 200px; height: 200px; border-radius: 40px;  object-fit: cover;" src="WhatsApp Image 2024-09-26 at 13.58.53.jpeg" alt="photo">
+            </div>
+            <div class="feature-card">
+                <h2 style="text-align: center;">Diksha T.</h2>
+                <a style=" text-align: center; text-decoration: none;" href="https://www.linkedin.com/in/amit-kushwaha-750496234?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><h4>Read more..</h4></a>
+                <img style="width: 200px; height: 200px; border-radius: 40px; object-fit: contain;" src="WhatsApp Image 2024-09-26 at 14.13.02.jpeg" alt="photo">
+            </div>
+        </div>
+    </div>
+    
+    <div class="trusted">
+        <p>Blockchain technology trusted by 800+ worldwide companies</p>
+        <p>As we are strong believer in the technical, financial, and social potential of cryptocurrencies so, we committed to pushing their boundaries and making them more accessible. By creating brassetz Network, our aims to improve the blockchain experience and help everyone participate in building and shaping the future of digital life, focusing on a design-technology that puts users into defi system.</p>
+       
+    </div>
+    
+    <div class="faq-container">
+        <h2>FAQ's About Brassetz</h2>
+        <div class="faq-item">
+            <div class="faq-question">What is Brassetz?</div>
+            <div class="faq-answer">Brassetz is a combination of "brand" and "assets". It represents a concept where the value of something continuously increases over time due to its brand recognition and high demand. It's like an investment that only goes up and never experiences downturns.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Brassetz (A brand + asset combination)</div>
+            <div class="faq-answer">Brassetz are different because they're not just for rich people or fancy folks. They're for everyone, from regular folks to billionaires. The idea is that by owning a Brasset, you're part of something special and valuable.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Why Brassetz is unique and different?</div>
+            <div class="faq-answer">
+                <ul>
+                    <li>In this world there is no single thing which shows a personal identity or value</li>
+                    <li>There is no perfect asset which value always only increase</li>
+                    <li>There is no one thing which shows proper and logical Generation identity</li>
+                    <li>According to time its value & exclusivity increases</li>
+                </ul>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Brassetz usage</div>
+            <div class="faq-answer">Brasset is bringing a new standard in technology - open and inclusive to challenge the old and activate a new age of sustainable globally - distributed innovation (which is advanced / secure / innovative).</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Brassetz uniqueness</div>
+            <div class="faq-answer">In this world there is no single asset which value does not fluctuate and always stays in demand.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Brassetz motto</div>
+            <div class="faq-answer">Making the world's first decentralized cryptocurrency which for barter and trade, not bitcoin type like it become exclusive asset like gold which is not usage in daily life. </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                question.classList.toggle('active');
+                const answer = question.nextElementSibling;
+                answer.classList.toggle('show');
+            });
+        });
+    </script>
+</body>
+</html>

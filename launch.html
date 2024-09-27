@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentra - Crypto Funding and Growth</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;
+        }
+        .hero-text {
+            flex: 1;
+        }
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(45deg, #ff6b6b, #feca57);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+        }
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .chart {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .stage {
+            background-color: rgba(255, 107, 107, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+            text-align: center;
+            /* flex-direction: row; */
+        }
+        @media screen and (max-width: 768px) {
+    body {
+        /* font-size: 16px; */
+        width: 100vw;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text, .hero-image {
+        flex: none;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+        word-wrap: break-word;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 20px;
+        margin-top: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 20px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .chart img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        /* justify-content: center; */
+        width: 95vw;
+        margin-left: 5px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .hero-image img {
+        border-radius: 15px;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Brassetz</div>
+            <nav>
+                <!-- <a href="#">ABOUT US</a>
+                <a href="#">OUR SERVICES</a>
+                <a href="#">OUR TEAM</a>
+                <a href="#">BLOG</a> -->
+                <a href="index.html" class="btn">Mine Now</a>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>We provide mainnet and exchange for your token</h1>
+                <p>In launching phase we provide ownership of coins, which can be transferable and exchangeble.
+                    Owner get lifetime transaction fees of his coin.
+                </p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKaJre7uAfLlri0TzeHv0Q-8-6hP7MBB8I4VDw8r7WpoVxsQ/viewform?usp=sf_link" class="btn">GET A FREE QUOTE</a>
+            </div>
+            <div class="hero-image">
+                <img style="object-fit: cover; width: 600px; border-radius: 40px;"  src="Leonardo_Phoenix_Futuristic_cityscape_with_holographic_crypto_1.jpg" alt="Token Growth Illustration">
+            </div>
+        </section>
+
+        <div class="features">
+            <div class="feature">Launch our coin</div>
+            <div class="feature">Providing Ownership</div>
+            <div class="feature">Start trading</div>
+        </div>
+
+        <div class="info-box">
+            <h2>Long Term Perspective</h2>
+            <p>We partner with entrepreneurs and project teams, focusing on building long-lasting relationships. We support our crypto projects with our industry expertise and wide network, and our partnerships are dynamic, enabling flexibility and consistent growth.</p>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <h2>Exchange crypto & fiats and trade</h2>
+                <p>Our state-of-the-art proprietary trading technology allows us to trade over 1000 digital asset and 1000+ cryptocurrency pairs and fiat currency, and start market making once a token is traded on our exchange. This project could be next gamechanger!</p>
+            </div>
+            <div class="info-box">
+                <h2>Trusted Exchange Network</h2>
+                <p>We offer Finance and coin-token market making services .Trusted Exchange Network  
+                    At Brassetz, we provide comprehensive finance and coin-token market-making services to centralized spot and derivatives exchanges, bridging the gap between fiat and crypto markets. As a trusted partner, we collaborate with top-tier exchanges, ensuring deep liquidity and efficient market operations, sometimes contributing up to 25% of the partner volume. Our proactive support and expertise help drive the success of our exchanges, enhancing stability and growth across the crypto trading/Finance ecosystem.</p>
+            </div>
+        </div>
+
+        <div class="chart">
+            <h2>if any Startup investor could invest in our blockchain Project</h2>
+            <img style="height: 200px; width: 200px; border-radius: 50px;" src="Leonardo_Phoenix_Futuristic_cityscape_with_holographic_crypto_3.jpg" alt="Growth Chart">
+            <!-- <div class="stage">Early Stage</div> -->
+            <h3>Early Stage VC Funders</h3>
+            <p>You can invest in brasset to make paramount of blockchain technology</p>
+            <ul>
+                Tokenized projects</br>
+                Supported by Crypto VCs</br>
+                Experience team with a Strong Vision, Technology</br>
+            </ul>
+            <span>Invest Now</span>
+            <a href="https://www.linkedin.com/in/dpkaction/" class="btn">Go</a>
+        </div>
+    </div>
+</body>
+</html>

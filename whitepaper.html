@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brassetz Whitepaper</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: rgba(110, 104, 143, 0.582);
+            
+            padding: 20px 20px 20px 20px;
+            border: 10px solid black;
+        
+        }
+        h1 {
+            color: #025d7e;
+            text-align: center;
+        }
+        h2 {
+            color: #172727;
+        }
+        h3 {
+            color: #0097a7;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #011e24;
+        }
+        a:hover {
+            color: #00698f;
+        }
+        /* Media Queries for Responsiveness */
+
+/* Media query for tablet and larger screens */
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 0;
+        padding: 40px 40px 40px 40px;
+        overflow-x: hidden;
+        /* width: 90vw; */
+    }
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+    body {
+        margin: 20px;
+        /* padding: 20px 20px 20px 20px; */
+        overflow-x: hidden;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 14px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+/* Media query for smaller mobile devices */
+@media only screen and (max-width: 480px) {
+    body {
+        /* margin: 10px; */
+        /* padding: 10px 10px 10px 10px; */
+        max-width: 100vw;
+        overflow-x: hidden;
+        
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: white;">Whitepaper</h1>
+    <h1>Preface</h1>
+    <h2>It work's like you having your own bank own coin mean every coin owner (not miner) get transaction fee as well for lifetime.</h2>
+    <p>As the world becomes increasingly digital, cryptocurrency is a next natural step in the evolution of money. Brassetz is the first digital currency for everyday people, representing a major step forward in the adoption of cryptocurrency worldwide.</p>
+    <p>Our Mission: Build a cryptocurrency and Transaction platform secured and operated by everyday people.</p>
+    <p>Our Vision:  Build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Brassetz, the world’s most widely used cryptocurrency.</p>
+    <h2>Disclaimer</h2>
+    <p>Because Brassetz’s mission is to be inclusive as possible, we’re going to take this opportunity to introduce our blockchain newbies to the rabbit hole.</p>
+    <h1>Introduction: Why Cryptocurrencies Matter</h1>
+    <p>Currently, our everyday financial transactions rely upon a trusted third party to maintain a record of transactions. For example, when you do a bank transaction, the banking system keeps a record & guarantees that the transaction is safe & reliable. Likewise, when Cindy transfers $5 to Steve using PayPal, PayPal maintains a central record of $5 dollars debited from Cindy’s account and $5 credited to Steve’s. Intermediaries like banks, PayPal, and other members of the current economic system play an important role in regulating the world’s financial transactions.</p>
+    <h2>Limitations of Trusted Intermediaries</h2>
+    <ul>
+        <li>Unfair value capture. These intermediaries amass billions of dollars in wealth creation (PayPal market cap is ~$130B), but pass virtually nothing onto their customers – the everyday people on the ground, whose money drives a meaningful proportion of the global economy. More and more people are falling behind.</li>
+        <li>Fees. Banks and companies charge large fees for facilitating transactions. These fees often disproportionately impact lower-income populations who have the fewest alternatives.</li>
+        <li>Censorship. If a particularly trusted intermediary decides that you should not be able to move your money, it can place restrictions on the movement of your money.</li>
+        <li>Permissioned. The trusted intermediary serves as a gatekeeper who can arbitrarily prevent anybody from being part of the network.</li>
+        <li>Pseudonymous. At a time when the issue of privacy is gaining greater urgency, these powerful gatekeepers can accidentally disclose — or force you to disclose — more financial information about yourself than you may want.</li>
+    </ul>
+    <h1>Introduction to Distributed Ledgers</h1>
+    <p>Bitcoin achieved this historical feat by using a distributed record. While the current financial system relies on the traditional central record of truth, the Bitcoin record is maintained by a distributed community of “validators,” who access and update this public ledger. Imagine the Bitcoin protocol as a globally shared “Google Sheet” that contains a record of transactions, validated and maintained by this distributed community.</p>
+    <h2>Benefits of Distributed Ledgers</h2>
+    <ul>
+        <li>In addition to decentralization, bitcoin, or cryptocurrencies in general, share a few nice properties that make money smarter and safer, although different cryptocurrencies may be stronger in some properties and weaker in others, based on different implementations of their protocols.</li>
+        <li>Cryptocurrencies are held in cryptographic wallets identified by a publicly accessible address, and is secured by a very strong privately held password, called the private key.</li>
+        <li>This private key cryptographically signs transactions and is virtually impossible to create fraudulent signatures.</li>
+        <li>This provides security and unseizability. Unlike traditional bank accounts that can be seized by government authorities, the cryptocurrency in your wallet can never be taken away by anyone without your private key.</li>
+        <li>Cryptocurrencies are censorship-resistant due to the decentralized nature because anyone can submit transactions to any computer in the network to get recorded and validated.</li>
+        <li>Cryptocurrency transactions are immutable because each block of transactions represents a cryptographic proof (a hash) of all the previous blocks that existed before that.</li>
+        <li>Once someone sends you money, they cannot steal back their payment to you (i.e., no bouncing checks in blockchain).</li>
+        <li>Some of the cryptocurrencies can even support atomic transactions.</li>
+        <li>“Smart contracts” built atop these cryptocurrencies do not merely rely on law for enforcement, but directly enforced through publicly auditable code, which make them trustless and can potentially get rid of middlemen in many businesses, e.g. Escrow for real estate.</li>
+    </ul>
+    <h1>Securing Distributed Ledgers (Mining)</h1>
+    <p>One of the challenges of maintaining a distributed record of transactions is security — specifically, how to have an open and editable ledger while preventing fraudulent activity. To address this challenge, Bitcoin introduced a novel process called Mining (using the consensus algorithm “Proof of Work”) to determine who is “trusted” to make updates to the shared record of transactions.</p>
+    <h2>Problem: Centralization of Power and Money</h2>
+    <p>In the early days of Bitcoin, when only a few people were working to validate transactions and mining the first blocks, anyone could earn 50 BTC by simply running Bitcoin mining software on their personal computer. As the currency began to gain in popularity, clever miners realized that they could earn more if they had more than one computer working to mine.</p>
+    <h1>Solution: Brassetz - Enabling Mining on Mobile Phones</h1>
+    <p>After identifying these key barriers to adoption, the Brassetz Core Team set out to find a way that would allow everyday people to mine (or earn cryptocurrency rewards for validating transactions on a distributed record of transactions). As a refresher, one of the major challenges that arises with maintaining a distributed record of transactions is ensuring that updates to this open record are not fraudulent. While Bitcoin’s process for updating its record is proven (burning energy / money to prove trustworthiness), it is not very user (or planet!) friendly.</p>
+    <h2>A Simplified Introduction to Consensus Algorithms</h2>
+    <p>Before jumping to introducing the Brassetz consensus algorithm, it helps to have a simple explanation on what a consensus algorithm does for a blockchain and the types of consensus algorithms that today’s blockchain protocols generally use, e.g. Bitcoin and SCP. This section is explicitly written in a oversimplified manner for the sake of clarity, and is not complete. For higher accuracy, see the section Adaptations to SCP below and read the stellar consensus protocol paper.</p>
+    <h1>Brassetz’s Adaptations to Stellar Consensus Protocol (SCP)</h1>
+    <p>Brassetz’s consensus algorithm builds atop SCP. SCP has been formally proven [Mazieres 2015] and is currently implemented within the Stellar Network. Unlike Stellar Network consisting mostly of companies and institutions (e.g., IBM) as nodes, Brassetz intends to allow devices of individuals to contribute on the protocol level and get rewarded, including mobile phones, laptops and computers.</p>
+    <h2>Roles in Brassetz</h2>
+    <ul>
+        <li>Brassetzoneer. A user of the Brassetz mobile app who is simply confirming that they are not a “robot” on a daily basis. This user validates their presence every time they sign in to the app. They can also open the app to request transactions (e.g. make a payment in Brassetz to another Brassetzoneer)</li>
+        <li>Contributor. A user of the Brassetz mobile app who is contributing by providing a list of Brassetzoneers he or she knows and trusts. In aggregate, Brassetz contributors will build a global trust graph.</li>
+        <li>Ambassador. A user of the Brassetz mobile app who is introducing other users into Brassetz network.</li>
+        <li>Node. A user who is a Brassetzoneer, a contributor using the Brassetz mobile app, and is also running the Brassetz node software on their desktop or laptop computer. The Brassetz node software is the software that runs the core SCP algorithm, taking into account the trust graph information provided by the Contributors.</li>
+    </ul>
+    <h1>Mining Rewards</h1>
+    <p>A beautiful property of the SCP algorithm is that it is more generic than a blockchain. It coordinates consensus across a distributed system of Nodes. This means that the same core algorithm is not only used every few seconds to record new transactions in new blocks , but also it can be used to periodically run more complex computations.</p>
+    <h2>Utility: Pooling and Monetizing Our Time Online</h2>
+    <p>Today, everyone is sitting on a veritable treasure trove of untapped resources. Each of us spend hours day on our phones. While on our phones, each of our views, posts or clicks creates extraordinary profits for large corporations. At Brassetz, we believe that people have the right to capture value created from their resources.</p>
+    <h1>Governance - Cryptocurrency for and by the People</h1>
+    <p>Challenges with 1st Generation Governance models</p>
+    <ul>
+        <li>Trust is the foundation of any successful monetary system. One of the most important factors engendering trust is governance or the process by which changes are implemented to the protocol over time.</li>
+        <li>De Brassetzte its importance, governance is often one of the most overlooked aspects of cryptoeconomic systems.</li>
+    </ul>
+    <h2>Brassetz’s Governance Model – a two-phase plan</h2>
+    <p>In an article challenging the merits of on-chain governance, Vlad Zamfir, one of Ethereum’s core developers, argues that blockchain governance “is not an abstract design problem. It’s an applied social problem.”</p>
+    <h1>Roadmap/Deployment Plan</h1>
+    <p>Phase 1 – Design, Distribution, Trust Graph Bootstrap.</p>
+    <ul>
+        <li>The Brassetz server is operating as a faucet emulating the behavior of the decentralized system as it will function once its live.</li>
+        <li>During this phase improvements in the user experience and behavior are possible and relatively easy to make compared to the stable phase of the main net.</li>
+        <li>All minting of coins to users will be migrated to the live net once it launches.</li>
+    </ul>
+    <h2>Phase 2 – Testnet</h2>
+    <p>Before we launch the main net, the Node software will be deployed on a test net.</p>
+    <ul>
+        <li>The test net will use the same exact trust graph as the main net but on a testing Brassetz coin.</li>
+        <li>Brassetz core team will host several nodes on the test net, but will encourage more Brassetzoneers to start their own nodes on the testnet.</li>
+    </ul>
+    <h2>Phase 3 – Mainnet</h2>
+    <p>When the community feels the software is ready for production, and it has been thoroughly tested on the testnet, the official mainnet of the Brassetz network will be launched.</p>
+    <h1>Whitepaper: October 2024 Chapters with october 2024 Rewards Issuance Formula</h1>
+    <h2>Token Model and Mining</h2>
+    <p>A well thought-out, sound token design is critical to the success of a cryptocurrency network.</p>
+    <h3>Brassetz Supply</h3>
+    <p>Brassetz Network’s vision is to build the world’s most inclusive peer-to-peer ecosystem and online experience, fueled by Brassetz, the world’s most widely used cryptocurrency.</p>
+    <h3>Mining Mechanism</h3>
+    <p>Brassetz Network’s mining mechanism has been allowing Brassetzoneers to contribute to the growth, distribution and security of the network and be rewarded in Brassetz meritocratically.</p>
+    <h1>Roadmap</h1>
+    <p>Brassetz Network is unique in our technological and ecosystem design as well as the significance of our community input in development.</p>
+    <h2>Phase 1: Beta</h2>
+    <p>In October 2024, we publicly launched our site  as an alpha prototype that onboarded the initial Brassetzoneers.</p>
+    <h2>Phase 2: Testnet</h2>
+    <p>This phase started on october 1, 2024, marking another critical preparation to the transition to a decentralized blockchain—a live Testnet with distributed Nodes from all over the world.</p>
+    <h2>Phase 3: Mainnet</h2>
+    <p>In september (2025), the Mainnet of the Brassetz blockchain will go live.</p>
+    <h3>KYC Verification and Mainnet Balance Transfer</h3>
+    <p>“Know Your Customer/Client” (KYC) is a process that verifies identification to distinguish genuine accounts from fake ones.</p>
+    <h3>Restrictions in the Enclosed Network</h3>
+    <p>While transactions between Brassetz apps and Brassetzone ers and Brassetzoneer-to Brassetzoneer transactions are allowed within Brassetz Network, the Enclosed Network will have in place the restrictions as listed below.</p>
+    <ul>
+        <li>There will be no connectivity between Brassetz and other blockchains or crypto exchanges.</li>
+        <li>Mainnet can only be accessed through the Brassetz Wallet and Brassetz apps on the Brassetz Browser.</li>
+        <li>The Mainnet blockchain will be accessible to any computer on the internet but only through a firewall to enforce the above rules.</li>
+    </ul>
+    <h2>After mining process</h2>
+    A is a mining brassetzoneer who has passed KYC.
+    <h1>Transferable Balance</h1>
+
+    <p>Here, A's Transferable Balance is the sum of the following three components:</p>
+    
+    <ul>
+      <li>Brassetzoneer Rewards: brassetz mined based on A's brassetzoneer status across all mining sessions</li>
+      <li><h2>Contributor Rewards:</h2> D and F's contribution to A's mining rate as Contributors in all mining sessions</li>
+    </ul>
+    
+    <p>During the Enclosed Mainnet period, any Mobile Balance that has not become Transferable Balance will remain in the Mobile mining app until the associated brassetzoneers in the Referral Team and Security Circles pass KYC and the corresponding amount becomes transferable to Mainnet. In the case of the above example of brassetzoneer A, the balance contribution by C, E, and G will remain as Mobile Balance for A in the mining app waiting for them to pass KYC in order for such balance to become transferable. If such associated accounts never pass KYC, the balance attributed to these non-KYC'ed accounts will be discarded at a certain date which will have allowed enough time for the whole network to KYC. The unclaimed balances due to lack of KYC will be discarded by not being transferred to the Mainnet at all, instead freeing it up for mining by other KYC'ed brassetzoneers within the allocated brassetz overall supply limit for brassetzoneer mining as explained in the brassetz Supply section.</p>
+    
+    <h2>Restrictions in the Enclosed Network</h2>
+    
+    <p>While transactions between brassetz apps and brassetzoneers and brassetzoneer-to brassetzoneer transactions are allowed within brassetz Network, the Enclosed Network will have in place the restrictions as listed below. These restrictions at this stage help enforce the enclosed nature of the network:</p>
+    
+    <ul>
+      <li>There will be no connectivity between brassetz and other blockchains or crypto exchanges.</li>
+      <li>Mainnet can only be accessed through the brassetz Wallet and brassetz apps on the brassetz Browser.</li>
+      <li>The Mainnet blockchain will be accessible to any computer on the internet but only through a firewall to enforce the above rules.</li>
+      <li>There will only be Core Team Nodes on the Mainnet to ensure that the firewall is in place at all times.</li>
+    </ul>
+    
+    <p>The Enclosed Network will support the economic activities and growth of the brassetz ecosystem. Thus, brassetzoneer-to brassetzoneer transactions are possible through the brassetz Wallet as KYC'ed brassetzoneers will be able to use the brassetz Wallet to transact in brassetz. Brassetzoneers can also spend brassetz in brassetz apps on the brassetz Browser, which can access the Mainnet through the brassetz Apps SDK and the brassetz Blockchain. During the Enclosed Network period, an app on the brassetz Browser can only use the brassetz blockchain whitelisted by the firewall to interact with the Mainnet.</p>
+    
+    <h2>Allowed and Prohibited Transactions</h2>
+    
+    <p>The following uses of brassetzoneer-to brassetzoneer, brassetzoneer-to-App, and App-to brassetzoneer transactions will be allowed:</p>
+    
+    <ul>
+      <li>Exchange of brassetz for goods and services through brassetz Apps</li>
+      <li>Transfer of brassetz between brassetzoneers for goods and services</li>
+    </ul>
+    
+    <p>The following uses will be prohibited:</p>
+    
+    <ul>
+      <li>Exchange of brassetz for fiat currency</li>
+      <li>Exchange of brassetz for other cryptocurrencies</li>
+      <li>Transfer for brassetz for a future promise of fiat or other cryptocurrencies</li>
+    </ul>
+    
+    <p>We will enforce the above restrictions by adding a firewall to the Mainnet and by exclusively running the Mainnet Nodes for this interim period. Community Nodes will continue to run on the Testnet in the Enclosed Network period. We will continue to implement interface and other changes to the Nodes in preparation for the Open Network period where the Community Nodes will be able to run on the Mainnet. The restrictions of the Network to keep it enclosed will be relaxed as it reaches the next period—Open Network.</p>
+    
+    <h2>Major Accomplishments during the Testnet Phase</h2>
+    
+    <p>The following major accomplishments were made during the Testnet phase:</p>
+    
+    <ul>
+      <li>Many versions of the Node software were released.</li>
+      <li>The brassetz Platform was released along with key ingredients of our ecosystem infrastructure: Wallet, Browser, Brainstorm and developer tools. Brassetzlot version of the KYC app was introduced on the brassetz Browser.</li >
+      <li>The project ran its first ever worldwide online Hackathon with thousands of participants from within the brassetzoneer Community.</li>
+      <li>Brassetz Network grew to over 30 million engaged brassetzoneers, and from 0 to over 10,000 fully functional community Nodes and over 100,000 daily active Nodes on the waiting list.</li>
+      <li>Brassetz Network reached almost all countries and regions in the world.</li>
+    </ul>
+    
+    <h2>Phase 3: Mainnet</h2>
+    
+    <p>In October 2024, the Mainnet of the brassetz blockchain will go live. The migration of brassetzoneer balances from their phone account to the Mainnet starts during this period. KYC authentication of a brassetzoneer precedes their balance migration to the Mainnet. In order to allow for sufficient time for millions of brassetzoneers to successfully complete their KYC verification, create utilities in the brassetz ecosystem, and continue to iterate on our technology and ecosystem design, the Mainnet will have two periods:</p>
+    
+    <ul>
+      <li>At first, firewalled Mainnet (i.e., the Enclosed Network)</li>
+      <li>And then, open Mainnet (i.e., the Open Network)</li>
+    </ul>
+    
+    <h2>The Enclosed Network Period</h2>
+    
+    <p>This period will begin in October 2024. The Enclosed Network period means that the Mainnet is live but with a firewall that prevents any unwanted external connectivity. Brassetzoneers will be able to take time to KYC and migrate their brassetz to the live Mainnet blockchain. Any balance migrated to the Mainnet can be used, by the choice of the brassetzoneer, to purchase goods and services in brassetz apps, transfer to other brassetzoneers, or get locked up for a duration of time for a higher mining rate. KYC'ed brassetzoneers will be able to use their brassetz on the Mainnet freely in an enclosed environment within brassetz Network. However, this period will not allow connectivity between the brassetz blockchain and other blockchains.</p>
+    
+    <h2>Advantages of the Two-Period Approach to Mainnet</h2>
+    
+    <p>There are multiple advantages to having an intermediate enclosed period to ramp up to the fully open Mainnet. This approach allows time for:</p>
+    
+    <ul>
+      <li>Millions of brassetzoneers worldwide to pass KYC</li>
+      <li>Building and deploying more brassetz Apps and allowing more utilities to be created and used</li>
+      <li>Transitioning brassetz Apps deployed on the Testnet to the Mainnet</li>
+      <li>Iterating on any modifications and adjustments to the Mainnet and the ecosystem before the Open Network</li>
+    </ul>
+    
+    <p>The Enclosed Network period allows time for millions of brassetzoneers to KYC and migrate their brassetz to the Mainnet. Only a small fraction of brassetzoneers have been able to complete their KYC around the launch of the Mainnet. Over the coming months, we will continue to roll out the KYC solution to more brassetzoneers and help them complete their KYC. If we moved directly from Testnet to Open Network, this would mean that the brassetzoneers who were able to KYC before others would have brassetz available for use outside of the brassetz platform while the brassetzoneers still waiting to complete their KYC would not yet have this privilege. The speed at which brassetzoneers all over the world are able to complete their KYC will depend on the speed at which each local community provides the KYC validator crowd work force as well as the speed at which individual brassetzoneers participate in the KYC.</p>
+    
+    <p>Having the Enclosed Network period gives time for millions of brassetzoneers to complete their KYC and transfer their brassetz to the Mainnet. This way, all the brassetzoneers who are willing and able to complete their KYC in a reasonable period of time get to use their brassetz outside of the brassetz platform at once. Given that external connectivity between the brassetz Blockchain and other blockchains or systems is not allowed during the Enclosed Network period, this further helps brassetzoneers focus on transitioning into Mainnet without any influences external to the brassetz Blockchain.</p>
+    
+    <p>This period will also help the community focus on creating utilities and bootstrapping the ecosystem without any external distractions. Consistent with the vision of the brassetz network to enable a utility-based ecosystem, this allows apps to deploy on Mainnet and create utilities for brassetzoneers. Brassetz apps will be able to switch from Testnet to Mainnet—to production mode for real brassetz transactions. At this time, KYC'ed brassetzoneers will be able to spend their brassetz on brassetz apps, boosting utilities creation and bootstrapping the brassetz ecosystem before the Open Network. This gradual and deliberate ramp to Open Network will help the apps, as well as the brassetz Network, to uncover and resolve any glitches in the market and the technology. Thus, the Enclosed Network period is in line with brassetz's vision of a utility-based ecosystem and its iterative philosophy.</p>
+    
+    <p>Moreover, the Enclosed Network will allow the Mainnet to run with production data and real brassetz, which differs from Testnet. Data gathered during the Enclosed Network will help calibrate and tweak any configurations and formulae, if necessary, to ensure a stable and successful Open Network.</p>
+    
+    <h2>KYC Verification and Mainnet Balance Transfer</h2>
+    
+    <p>"Know Your Customer/Client" (KYC) is a process that verifies identification to distinguish genuine accounts from fake ones. The vision of brassetz Network is to build an inclusive and the most widely distributed token and ecosystem for all brassetzoneers. The mining mechanism of brassetz Network is social network-based, and the mining rate has halved 5 times so far as the social network size grew to over 1K, 10K, 100K, 1M, and 10M engaged members. Therefore, brassetz has a strict policy of one account per person. This requires a high degree of accuracy to establish that members in the network are genuine human beings, preventing individuals from being able to unfairly hoard brassetz by creating fake accounts. Brassetzoneers' KYC results will depend on not only identity verification, but also their name matching with the brassetz account and screening against government sanction list. KYC, thus, helps ensure the true humanness of the network and compliance with the Anti-Money Laundering (AML) and anti-terrorism regulations.</p>
+    
+    <p>As communicated at the founding of the network, to ensure true humanness, fake brassetz accounts and scripted mining are strictly prohibited. These accounts will be disabled, and will not be able to migrate to Mainnet. Over the past three years, multiple technical mechanisms have been implemented to identify bots and fake accounts. For the accounts identified as highly likely to be fake by brassetz's algorithm, the weight is on these accounts to prove otherwise. These identified fake accounts will either be disabled or go through a much more rigorous review and appeal process. The allocation of KYC slots will be prioritized for accounts with a high likelihood of being true human holders.</p>
+    
+    <p>Only the accounts with verified identities will be allowed to transition to Mainnet, and only the brassetz balances attributable to identity-verified accounts will be allowed to transfer to the Mainnet balance. When a brassetzoneer and their Referral Team and Security Circle members pass the KYC determines if and when, and to what extent, a brassetzoneer can transfer their balances. Below is a hypothetical example to illustrate how the KYC verification of brassetzoneers affects their balances in migration to the Mainnet.</p>
+    
+    <p>For simplicity, we define different concepts of brassetz balances as follows:</p>
+    
+    <ul>
+      <li>Mobile Balance: The brassetz balance currently shown in a brassetzoneer's account in the brassetz mobile app</li>
+      <li>Transferable Balance: The balance that has been allowed to be transferred to the Mainnet because the brassetzoneer and their specific associated individuals in the Referral Teams and Security Circles have passed KYC</li>
+      <li>Mainnet balance: The balance that has been migrated and transferred by the brassetzoneer to the Mainnet</li>
+    </ul>
+    
+   
+    <p>Suppose individual A is the owner of a brassetz account who wants to transfer their Mobile Balance. Brassetzoneer A will only be allowed to transfer any of the Mobile Balance to the Mainnet when their identity is verified, i.e., when they pass the KYC.</p>
+</body>
+</html>

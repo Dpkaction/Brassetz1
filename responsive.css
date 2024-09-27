@@ -1,0 +1,137 @@
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .steps, .stats, .features, .roadmap {
+        gap: 15px;
+    }
+
+    .feature, .milestone {
+        min-width: 200px;
+    }
+}
+
+/* Larger mobile devices and small tablets */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .mining-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+   
+    .steps, .stats, .features, .roadmap {
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .step, .stat, .feature, .milestone {
+        width: 100%;
+        max-width: 400px;
+    
+    }
+
+    .images {
+        /* flex-direction: column; */
+        justify-content: center;
+    }
+    .page1 {
+        visibility: inherit;
+    }
+    .tagline {
+        flex-direction: column;
+        /* visibility: inherit; */
+    }
+    .page1{
+        flex-direction: column-reverse;
+    }
+
+    .small-images {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mining-info .section  {
+        flex-direction: column;
+        width: 100%;
+        max-width: 40px;
+
+    }
+
+    .footer .container1 {
+        flex-direction: column;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 480px) {
+    .tagline h1 {
+        font-size: 24px;
+    }
+
+    .tagline h2, .tagline h3 {
+        font-size: 18px;
+    }
+
+    .small-images {
+        flex-direction: column;
+        /* justify-content: center; */
+        /* width: 80vm; */
+    }
+
+    .images .small-images img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .auth-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .mining-box {
+        flex-direction: column;
+        align-items: stretch;
+        width: 80vw;
+    }
+    .feature{
+        width: 90%;
+    }
+    .container2{
+        display: none;
+        /* width: 100vw; */
+      
+    }
+
+    .mining-button {
+        width: 100%;
+    }
+
+    .footer .column {
+        text-align: center;
+    }
+}
